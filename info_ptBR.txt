@@ -1,0 +1,35 @@
+p = preposição
+tau = representação das evidências sobre p em um eixo de coordenadas
+gc = grau de certeza
+gct = grau de contradição
+mi = grau de evidência favorável a p
+lambda = grau de evidência contrária a p
+mir = grau de crença resultante
+vscc = valor superior de controle de certeza
+vicc = valor inferior de controle de certeza
+vscct = valor superior de controle de contradição
+vicct = valor inferior de controle de contradição
+ftct = fator de tolerância à contradição
+ftd = fator de tolerância à decisão
+vlf = valor limite da falsidade
+vlv = valor limite da verdade
+s1 = saída digital
+s2a = saída analógica a (gct)
+s2b = saída analógica b (gc)
+help = sinal de inconsistência
+fa = fator de aprendizagem
+fda = fator de desaprendizagem
+
+gc = mi - lambda
+gct = mi + lambda - 1
+tau = (mi no eixo x, lambda no eixo y)
+mir = (gc + 1) / 2
+ftct = (|vicct| + vscct) / 2
+vlf e vlv = (0,5 - ftd) / 2
+
+if gc >= vscc then VERDADEIRO
+elif gc <= vicc then FALSO
+elif gct >= vscct then T INCONSISTENTE
+eliif gct <= vicct then I PARACOMPLETO
+else DADOS INSUFICIENTES && help = 1
+
