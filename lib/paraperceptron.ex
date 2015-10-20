@@ -1,7 +1,7 @@
 # encoding: UTF-8
 # vim: filetype=elixir
 
-defmodule ElixirParaperceptron do
+defmodule Paraperceptron do
 	@moduledoc """
 	Provide an easy way to deal with Paraconsistent Logic RNAs.
 	Wesley Rodrigues <wesley.it@gmail.com>
@@ -28,10 +28,10 @@ defmodule ElixirParaperceptron do
 	"""
 	def output({mi, lambda}, limits \\ [hvsc: 0.5, lvsc: -0.5, hvcc: 0.5, lvcc: -0.5]) do
 		cond do 
-			fel({mi, lambda}) >= limits[:hvsc] -> :true
-			fel({mi, lambda}) <= limits[:lvsc] -> :false
-			uel({mi, lambda}) >= limits[:hvcc] -> :inconsistent
-			uel({mi, lambda}) >= limits[:lvcc] -> :paracomplete
+			fel({mi, lambda}) >= limits[:hvsc] -> :it_is_true
+			fel({mi, lambda}) <= limits[:lvsc] -> :it_is_false
+			uel({mi, lambda}) >= limits[:hvcc] -> :it_is_inconsistent
+			uel({mi, lambda}) >= limits[:lvcc] -> :it_is_paracomplete
 			true -> :help
 		end
 	end

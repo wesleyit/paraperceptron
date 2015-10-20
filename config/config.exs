@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :elixir_paraperceptron, key: :value
+#     config :paraperceptron, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:elixir_paraperceptron, :key)
+#     Application.get_env(:paraperceptron, :key)
 #
 # Or configure a 3rd-party app:
 #
