@@ -3,7 +3,6 @@ elixir:
   - 1.1.0
 otp_release:
   - 18.0
-sudo: false # to use faster container based build environment
 env:
   - ELIXIR_ERL_OPTIONS=""
 script:
