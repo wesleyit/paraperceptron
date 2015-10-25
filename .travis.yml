@@ -6,7 +6,7 @@ otp_release:
 env:
   - ELIXIR_ERL_OPTIONS=""
 script:
-  - mix test
+  - mix test --trace --cover
 after_script:
 notifications:
   recipients:
