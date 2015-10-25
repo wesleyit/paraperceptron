@@ -3,5 +3,4 @@ defmodule ParaperceptronTest do
   doctest Paraperceptron
 
 end
-
 # vim: filetype=elixir tabstop=2 shiftwidth=4 expandtab
