@@ -1,6 +1,6 @@
 defmodule Paraperceptron.Decision do
 
-  @author Wesley Rodrigues <wesley.it@gmail.com>
+  @author 'Wesley Rodrigues <wesley.it@gmail.com>'
 
   import Paraperceptron  
   @moduledoc """

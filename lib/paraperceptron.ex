@@ -1,6 +1,6 @@
 defmodule Paraperceptron do
   
-  @author Wesley Rodrigues <wesley.it@gmail.com>
+  @author "Wesley Rodrigues <wesley.it@gmail.com>"
   
   @moduledoc """
   Provide an easy way to deal with Paraconsistent Logic applied
