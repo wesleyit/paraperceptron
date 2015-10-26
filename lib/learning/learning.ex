@@ -1,10 +1,12 @@
 defmodule Paraperceptron.Learning do
+
+  @author Wesley Rodrigues <wesley.it@gmail.com>
+
   import Paraperceptron  
   @moduledoc """
   The learning unity of a Paraperceptron Artificial Neural Net.
   This is an inportant piece of Paraperceptron ANNs, it learns 
   patterns to get adjusted values.
-  Wesley Rodrigues <wesley.it@gmail.com>
   """
   
   ## The default value for mi2 and lf (learning factor):

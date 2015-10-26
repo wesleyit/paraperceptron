@@ -1,4 +1,7 @@
 defmodule Paraperceptron do
+  
+  @author Wesley Rodrigues <wesley.it@gmail.com>
+  
   @moduledoc """
   Provide an easy way to deal with Paraconsistent Logic applied
   to Artificial Neural Networks (ANNs).
@@ -8,7 +11,6 @@ defmodule Paraperceptron do
   To build the ANN there are many models which can be used, dependin 
   on the problem domain. Each ANN unit imports functions from this
   module.
-  Wesley Rodrigues <wesley.it@gmail.com>
   """
 
   @doc """
@@ -52,4 +54,4 @@ defmodule Paraperceptron do
   def limit_values(dtf), do: (1 - dtf) / 2
 
 end
-# vim: filetype=elixir tabstop=2 shiftwidth=4 expandtab
+# vim: filetype=elixir tabstop=2 shiftwidth=2 expandtab

@@ -1,10 +1,12 @@
 defmodule Paraperceptron.Basic do
+
+  @author Wesley Rodrigues <wesley.it@gmail.com>
+
   import Paraperceptron  
   @moduledoc """
   The basic unity of a Paraperceptron Artificial Neural Net.
   It is like a generic unit, that can be adapted to many
   other functions like decision, analysis, maximization, etc.
-  Wesley Rodrigues <wesley.it@gmail.com>
   """
   
   ## The default values for high and low limits:
@@ -47,4 +49,4 @@ defmodule Paraperceptron.Basic do
   end
 
 end
-# vim: filetype=elixir tabstop=2 shiftwidth=4 expandtab
+# vim: filetype=elixir tabstop=2 shiftwidth=2 expandtab

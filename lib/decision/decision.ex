@@ -1,11 +1,13 @@
 defmodule Paraperceptron.Decision do
+
+  @author Wesley Rodrigues <wesley.it@gmail.com>
+
   import Paraperceptron  
   @moduledoc """
   The decision unity of a Paraperceptron Artificial Neural Net.
   This is usually the last node of the network, responsible for
   providing the output values, which can be 1 for true, 
   0 for false and 0.5 for indefinition.
-  Wesley Rodrigues <wesley.it@gmail.com>
   """
 
   ## The default values for decision and contradiction:
