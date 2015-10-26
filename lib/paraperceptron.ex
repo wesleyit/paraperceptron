@@ -33,9 +33,11 @@ defmodule Paraperceptron do
   Resulting trust level is the basic structural equation used 
   to get the final value for decision in analytic and other advanced units.
   Usage:
+  rtl(mi, lambda, lf), where lf, mi and lambda are numbers between 0 and 1.
   rtl(mi, lambda), where mi and lambda are numbers between 0 and 1.
   It returns the resulting trust level, which is a number between 0 and 1.
   """
+  def rtl(mi, lambda, lf), do: (lf * (mi - lambda) + 1) / 2 
   def rtl(mi, lambda), do: (mi - lambda + 1) / 2 
 
   @doc """
