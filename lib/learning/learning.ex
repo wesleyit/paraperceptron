@@ -1,8 +1,8 @@
 defmodule Paraperceptron.Learning do
-
-  @author "Wesley Rodrigues <wesley.it@gmail.com>"
-
   import Paraperceptron  
+
+  @author 'Wesley Rodrigues <wesley.it@gmail.com>'
+
   @moduledoc """
   The learning unity of a Paraperceptron Artificial Neural Net.
   This is an inportant piece of Paraperceptron ANNs, it learns 
@@ -14,7 +14,10 @@ defmodule Paraperceptron.Learning do
   @lf 1
 
   @doc """
+  This is a recursive function that runs until the output
+  value become equals the desired value.
   """
+  @spec output(number, number, number, integer) :: number
   def output(mi1, mi2 \\ @default_mi2, desired, step \\ 1) do
     mi = mi1
     lambda = 1 - mi2
